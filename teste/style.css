@@ -1,0 +1,430 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Reboto-light';
+        src: url(fontes/Roboto-Light.ttf) format('truetype');
+        font-weight: lighter;
+}
+
+@font-face {
+font-family: 'Reboto';
+    src: url(fontes/Roboto-Medium.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Reboto-black';
+        src: url(fontes/Roboto-Black.ttf) format('truetype');
+        font-weight: bold;
+}
+
+:root {
+    --cor00: #171A30;
+    --cor01: #03111D;
+    --cor02: #0B1118;
+    --cor03: #0D0F12;
+    --cor04: #FF4454;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Reboto';
+
+}
+
+html {
+    width: auto;
+    height: 100vh;
+}
+
+body {
+    color: white;
+    background-color: var(--cor02);
+}
+
+/*cabeçalho*/
+
+header {
+    background-color: var(--cor01);
+    position: fixed;
+    width: 100%;
+}
+
+#gamersclub {
+    width: 100%;
+    background-color: var(--cor00);
+}
+
+#logo {
+    padding: 10px 0px 10px 40px;
+}
+
+#cabeca {
+    height: 95px;
+    margin: auto;
+    width: 1198px;
+}
+
+#top {
+    height: 50px;
+    display: flex;
+    border-bottom: 1px solid var(--cor03);
+
+}
+
+
+#valorantzone  {
+    padding-left: 20px;
+    height: 50px;
+    width: 70%;
+
+}
+
+#redes-sociais {
+    display: flex;
+    color: white;
+    gap: 15px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    width: 30%;
+    
+
+}
+
+span {
+    font-family:'Reboto';
+    font-size: small;
+}
+
+i:hover {
+    color: var(--cor04);
+}
+
+#menu {
+    height: 45px;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 45px;
+    
+
+}
+
+#main-menu {
+    list-style: none;
+    display: inline-flex;
+    gap: 25px;
+    padding: 5px 0px 5px 30px;
+    height:100%;
+   
+    
+}
+
+#main-menu > li {
+    list-style: none;
+    height: 100%;
+    
+    
+}
+
+#main-menu > li > a {
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    
+  
+}
+
+#main-menu > li > a:hover {
+    color: var(--cor04);
+    border-bottom: 1px solid var(--cor04);
+    height: 100%;
+    padding-bottom: 20px;
+     
+}
+
+/*cabeçalho*/
+
+/* principal*/
+
+
+main {
+    margin: auto;
+    align-items: center;
+    background-color:var(--cor03);
+    width: 1198px;
+    height: 100%;
+    
+    
+}
+
+#imagemfundo {
+    padding-top: 200px;
+    padding-bottom: 10px;
+
+}
+
+#total {
+    width: 1198px;
+    display: flex;
+}
+
+
+#principal {
+    width: 75%;
+   
+
+}
+
+#regras {
+    width: 100%;
+    height: auto;
+    text-align: justify;
+    padding: 20px;
+}
+
+#regras > h3 {
+    width: 100%;
+    color: rgb(211, 204, 204);
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--cor04);
+}
+#regras > h2 {
+    color: var(--cor04);
+    padding-bottom: 15px;
+
+  
+}
+
+#regras > ul {
+    text-align: justify;
+    display: block;
+    list-style-type: disc;
+}
+
+#regras > ul > li {
+    padding-bottom: 10px;
+    text-indent: 35px;
+    color: gray;
+    list-style-position: inside;
+}
+
+
+#equipes {
+    width: 100%;
+    height: auto;
+    text-align: justify;
+    padding: 20px;
+    display:inline-flex;
+    flex-direction: column;
+    
+} 
+
+#equipes > img {
+    width: 90%;
+    
+}
+
+
+#equipes > h3 { 
+    width: 100%;
+    color: rgb(211, 204, 204);
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--cor04);
+
+}
+
+
+#partidas {
+    width: 100%;
+    height: auto;
+    text-align: justify;
+    padding: 20px;
+   
+
+}
+
+#partidas > img {
+padding-left: 20px;
+
+}   
+
+#partidas > h3 { 
+    width: 100%;
+    color: rgb(211, 204, 204);
+    margin-bottom: 30px;  
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--cor04);
+
+}
+
+p {
+    font-family: 'reboto';
+    font-size: small;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    color: rgb(223, 211, 211);
+}
+
+/* principal*/
+
+/* noticias*/
+
+#secundario {
+    width: 25%;
+}
+
+
+#datas { 
+    width: 100%;
+    margin: 20px;
+
+}
+
+#datas > h3 {
+    width: 100%;
+    color: rgb(211, 204, 204);
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--cor04);
+
+}
+
+#datas > h4 {
+    color: var(--cor04);
+    padding-bottom: 5px;
+
+}
+
+#datas > p {
+    font-family: 'reboto';
+    font-size: medium;
+    padding-bottom: 10px;
+    color: rgb(223, 211, 211);
+  
+    
+    
+}
+
+
+#ultimasnoticias {
+    width: 100%;
+    margin: 5px;
+
+}
+
+section > h3{
+    width: 100%;
+    color: rgb(211, 204, 204);
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--cor04);
+}
+
+section {
+   padding: 20px;
+    
+}
+
+#not1 {
+    background-color: #101822;
+    margin-bottom: 20px;
+    
+
+}
+
+#not1 > h4 {
+    padding: 10px;
+    text-align: justify;
+}
+
+#not1 > img {
+    width: 100%;
+}
+
+#not2 {
+    background-color: #101822;
+    margin-bottom: 20px;
+
+}
+
+#not2 > h4 {
+    padding: 10px;
+    text-align: justify;
+
+}
+    
+#not2 > img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: 'Reboto';
+    font-weight: lighter;
+    
+}
+
+/* noticias*/
+
+/* rodapé*/
+
+footer{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    border-top: 1px solid #FF4454;
+    background-color:var(--cor03);
+    display: block;
+    
+}
+
+ footer > #rodape {
+    width: 1198px;
+    columns: 1;
+    margin: auto;
+    padding: 20px;
+    
+   
+}
+
+#embaixo {
+    width: 100%;
+    display: block;
+    
+}
+
+#embaixo > #img1 {
+    padding: 10px;
+   text-align: center;
+
+}
+
+#embaixo > #img2 {
+    padding: 10px;
+   text-align: center;
+
+}
+
+#embaixo > p {
+    color:rgb(223, 211, 211);
+    text-align: center;
+}
+
+ 
+#embaixo > p > a {
+    color:var(--cor04);
+}
+
+
+
