@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela grande</title>
+</head>
+
+<style>
+    table {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(202, 201, 201);
+    }
+    thead {
+        background-color: gray;
+
+    }
+
+    td, th, tr {
+        border: 1px solid black;
+    }
+
+    table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 400px;
+    }
+
+    tbody > tr:nth-child(2n) {
+        background-color: rgb(255, 0, 0);
+    }
+
+    th {
+        background-color: gray;
+    }
+
+
+
+
+</style>
+<body>
+    <table>
+        <caption>tabela</caption>
+        <thead>
+            <tr>
+                <th scope="col">algo</th>
+                <th scope="col">vasco</td>
+                <th scope="col">flamengo</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>champions</td>
+                <td>0</td>
+                <td>100</td>
+                
+            </tr>
+            <tr>
+                <td>copa</td>
+                <td>0</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>brasil</td>
+                <td>0</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">total</th>
+                <td>0</td>
+                <td>300</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    
+</body>
+</html>
